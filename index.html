@@ -1,1 +1,79 @@
-Hello World
+<!doctype html>
+<html>
+    <head>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+        <script src="galleria/galleria-1.4.2.min.js"></script>
+    </head>
+    <body>
+    	<h1>David Albers</h1>
+    	<h2>
+    		davidgalbers@gmail.com <br>
+    		<a href="https://www.linkedin.com/in/davidgalbers">LinkedIn</a> <a href="https://github.com/davidalbers">GitHub</a> <a href="https://docs.google.com/document/d/1sRNrCrIReX7wtvUVnmY-FnFz0l3FgRVrbBi5765k6ZI/edit?usp=sharing">Resume</a> 
+    	</h2>
+    	<hr>
+    	<br>
+        <div class="galleria">
+            <img src="img/HackathonScreen1.png">
+            <img src="img/HackathonScreen2.png">
+            <img src="img/HackathonScreen3.png">
+        </div>
+        <script>
+            Galleria.loadTheme('galleria/themes/classic/galleria.classic.min.js');
+            Galleria.run('.galleria');
+        </script>
+        <br>
+        <h1>Down for This?</h1>
+        <br>
+        <h3>This Android app won first place at the ACM Hackathon 2015. My friends Evan, Will, and Michael developed the web <a href="michael.evanforbes.net:3000">backend/frontend</a> for the app. It uses some cool open source libraries like Volley and Butterknife. It also has a bunch of Material Design elements.</h3>
+        <br><hr>
+        <style>
+		    .galleria{ width: 360px; height: 640px; margin:auto; background: #000 }
+		    h1 { 
+		    	font-size: 24pt;
+		    	font-family: "Arial";
+		    	text-align: center;
+		    	margin: auto;
+		    	color: #595959;
+
+		    }
+		    h2 {
+		    	font-size: 16pt;
+		    	font-family: "Arial";
+		    	text-align: center;
+		    	text-decoration: none;
+		    	margin: auto;
+		    	color: #737373;
+		    }
+		    h3 {
+		    	font-size: 12pt;
+		    	font-family: "Arial";
+		    	text-align: center;
+		    	width: 800px;
+		    	margin: auto;
+		    	color: #595959;
+		    }
+			a:link {
+			    color: #737373;
+			    text-decoration: none;
+			}
+
+			/* visited link */
+			a:visited {
+			    color: #737373;
+			}
+
+			/* mouse over link */
+			a:hover {
+			    color: #595959;
+			}
+
+			/* selected link */
+			a:active {
+			    color: #737373;
+			}
+			hr {
+				width: 800px;
+			}
+		</style>
+    </body>
+</html>

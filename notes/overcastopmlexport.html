@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<xmp style="display:none;">
+	
+# Exporting Overcast OPML with Shortcuts
+
+### What is it?
+
+Most podcast apps allow you to export your subscriptions in [OPML](https://en.wikipedia.org/wiki/OPML). [Overcast](https://overcast.fm/podcasts) supports this plus an "extended" format which also contains every podcast episode you have downloaded. You can get your personal version on the Overcast [account page](https://overcast.fm/account/export_opml)
+
+Here's an example of what you'd find in that file: 
+
+```
+<!-- Just an example, this isn't the whole file -->
+<outline type="rss" overcastId="323006" text="Cortex" title="Cortex" xmlUrl="https://www.relay.fm/cortex/feed" htmlUrl="https://www.relay.fm/cortex" subscribed="1">
+
+		 <!-- I listened to this whole episode -->
+        <outline type="podcast-episode" overcastId="346825202660328" pubDate="2020-12-14T07:45:00-05:00" title="110: 2021 Yearly Themes" url="http://relay.fm/cortex/110" overcastUrl="https://overcast.fm/+E7b4kA8-g" enclosureUrl="https://www.podtrac.com/pts/redirect.mp3/traffic.libsyn.com/secure/cortex/Cortex_110.mp3" userUpdatedDate="2020-12-14T15:08:20-05:00" userDeleted="1" played="1"/>
+        
+        <!-- I only listened to part of this episode-->
+        <outline type="podcast-episode" overcastId="346825866223649" pubDate="2018-09-19T08:45:00-04:00" title="74: The Biggest Challenge of Being a Human" url="http://relay.fm/cortex/74" overcastUrl="https://overcast.fm/+E7b7COICE" enclosureUrl="https://www.podtrac.com/pts/redirect.mp3/traffic.libsyn.com/cortex/Cortex_074.mp3" userUpdatedDate="2020-12-02T14:22:13-05:00" userDeleted="1" progress="5968"/>
+```
+
+### The Shortcut
+
+I wanted to get this data and put it in a more readable place so I made a [Shortcut](https://apps.apple.com/us/app/shortcuts/id915249334). Download it [here](https://www.icloud.com/shortcuts/98630dfa02204f48b13d402d41048fa3). This one just parses the podcast info from the OPML. This should be a good starting point if you wanted to do something with the OPML data.
+
+As an example, I made a separate Shortcut which moves all the OPML data into my app, [Podmark](https://apps.apple.com/us/app/podmark/id1546743310). Get that Shortcut [here](https://www.icloud.com/shortcuts/0f78ec7c6bb64c3ca2d111e8981840fe)
+
+</xmp>
+
+<script src="./strapdown/strapdown.js"></script>
+</html>

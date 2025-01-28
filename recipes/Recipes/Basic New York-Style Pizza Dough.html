@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <style type="text/css">
+            /* Shared styles */
+            body {
+                font-family: Helvetica, sans-serif;
+                font-size: 16.0px;
+                color: #34302e;
+                margin: 0.25in;
+            }
+            .name {
+                font-size: 18.0px;
+                font-family: Helvetica, sans-serif;
+                font-weight: normal;
+                margin: 0 0 10px 0;
+            }
+            .categories {
+                color: #605D5D;
+                font-size: 14.0px;
+                font-family: Helvetica, sans-serif;
+                font-style: italic;
+            }
+            .rating {
+                color: #d10505;
+                font-size: 14.0px;
+            }
+            .metadata {
+                font-size: 14.0px;
+            }
+            .infobox p {
+                margin: 0;
+                line-height: 150%;
+            }
+            .subhead {
+                color: #d10505;
+                font-weight: bold;
+                font-size: 14.0px;
+                text-transform: uppercase;
+                margin: 10px 0;
+            }
+            
+            .ingredients p {
+                margin: 4px 0;
+            }
+            /* To prevent nutrition/directions from getting too close
+               to ingredients */
+            .ingredients {
+                padding-bottom: 10px;
+            }
+            .clear {
+                clear:both;
+            }
+            a {
+                color: #4990E2;
+                text-decoration: none;
+            }
+            /* Full page specific styles */
+            .text {
+                line-height: 130%;
+            }
+            .photobox {
+                
+                float: left;
+                margin-right: 14px;
+                
+                
+            }
+            .photo {
+                max-width: 140.0px;
+                max-height: 140.0px;
+                width: auto;
+                height: auto;
+            }
+            
+            .inline-image {
+                max-width: 25%;
+                max-height: 25%;
+                width: auto;
+                height: auto;
+            }
+            .photoswipe {
+                border: 1px #dddddd solid;
+                cursor: pointer;
+            }
+            .pswp__caption__center {
+                text-align: center !important;
+            }
+            .recipe {
+                
+                page-break-after: always;
+                
+                
+            }
+            .recipe:first-child {
+                border-top: 0 none;
+                margin-top: 0;
+                padding-top: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Recipe -->
+<div class="recipe" itemscope itemtype="http://schema.org/Recipe" >
+    
+    <div class="infobox">
+
+        <!-- Image -->
+        
+        <div class="photobox">
+            
+            <a href="https://www.seriouseats.com/thmb/9jsxmZIMdJPVSon0iI2Kd76-tJI=/450x0/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__serious_eats__seriouseats.com__recipes__images__2012__07__20110708-new-york-pizza-dough-2719a9944b6342d1a7b6059a06b8eb3a.jpeg">
+                <img src="Images/84174A0B-32AE-487F-A45D-1B6FA7BAC03F/EF652495-63D9-47ED-BC0A-2268877373E8.jpg" itemprop="image" class="photo photoswipe"/>
+            </a>
+            
+            
+        </div>
+        
+
+        <!-- Name -->
+        <h1 itemprop="name" class="name">Basic New York-Style Pizza Dough</h1>
+        
+        <!-- Info -->
+        
+        
+        <!-- Rating, categories -->
+        <p itemprop="aggregateRating" class="rating" value="0"></p>
+        
+        
+        <p class="metadata">
+        
+            <!-- Cook time, prep time, servings, difficulty -->
+            
+            <b>Prep Time: </b><span itemprop="prepTime">10 mins</span>
+            
+            <b>Cook Time: </b><span itemprop="cookTime">26 hrs 10 mins</span>
+            
+            <b>Servings: </b><span itemprop="recipeYield">3 pizzas</span>
+            
+
+            <!-- Source -->
+            
+                <b>Source: </b>
+                
+                    <a itemprop="url" href="https://www.seriouseats.com/basic-new-york-style-pizza-dough">
+                        <span itemprop="author">seriouseats.com</span>
+                    </a>
+                
+                
+            
+        </p>
+        
+        
+        
+        <div class="clear"></div>
+        
+
+    </div>
+    
+    <div class="left-column">
+
+        <!-- Ingredients -->
+        
+        <div class="ingredientsbox">
+            <h3 class="subhead">Ingredients</h3>
+            <div class="ingredients text">
+                <p class="line" itemprop="recipeIngredient">Ingredients Save Recipe</p><p class="line" itemprop="recipeIngredient"><strong>22.5</strong> ounces bread flour, plus more for dusting (630g; about 4 1/2 cups)</p><p class="line" itemprop="recipeIngredient">.5 ounces sugar (15g; about 1 1/2 tablespoons)</p><p class="line" itemprop="recipeIngredient">.35 ounces kosher salt (10g; about 1 tablespoon)</p><p class="line" itemprop="recipeIngredient">.35 ounces instant yeast, such as SAF Instant Yeast (10g; about 2 teaspoons)</p><p class="line" itemprop="recipeIngredient"><strong>1.125</strong> ounces extra virgin olive oil (32g; about 3 tablespoons)</p><p class="line" itemprop="recipeIngredient"><strong>15</strong> ounces lukewarm water (420g; about 1 3/4 cups)</p>
+            </div>
+        </div>
+        
+        
+        <!-- Nutrition (in two-column mode it goes below the ingredients) -->
+        
+
+    </div>
+    
+    <div class="right-column">
+    
+    <!-- Description -->
+    
+
+    <!-- Directions -->
+    
+    <div class="directionsbox">
+        <h3 class="subhead">Directions</h3>
+        <div itemprop="recipeInstructions" class="directions text">
+            <p class="line">Combine flour, sugar, salt, and yeast in bowl of food processor. Pulse 3 to 4 times until incorporated. Add olive oil and water. Run food processor until mixture forms ball that rides around the bowl above the blade, about 15 seconds. Continue processing 15 seconds longer.</p><p class="line">Transfer dough ball to lightly floured surface and knead once or twice by hand until smooth ball is formed. It should pass the windowpane test. Divide dough into three even parts and place each in a covered quart-sized deli container or in a zipper-lock freezer bag. Place in refrigerator and allow to rise at least 1 day, and up to 5. Remove from refrigerator, shape into balls, and allow to rest at room temperature for at least 2 hours before baking.</p>
+        </div>
+    </div>
+    
+
+    <!-- Notes -->
+    
+
+    <!-- Nutrition (in regular mode it goes below the notes) -->
+    
+        <!-- Used in two different places depending on the recipe layout -->
+
+
+<div class="nutritionbox textbox">
+    <h3 class="subhead">Nutrition</h3>
+    <div itemprop="nutrition" class="nutrition text">
+        <p>(per serving)<br/>908 Calories 17g Fat 159g Carbs 27g Protein<br/>Nutrition Facts<br/>Servings: 3<br/>Amount per serving<br/>Calories 908<br/>% Daily Value*<br/>Total Fat 17g 22%<br/>Saturated Fat 2g 12%<br/>Cholesterol 0mg 0%<br/>Sodium 1304mg 57%<br/>Total Carbohydrate 159g 58%<br/>Dietary Fiber 6g 21%<br/>Total Sugars 6g<br/>Protein 27g<br/>Vitamin C 0mg 0%<br/>Calcium 38mg 3%<br/>Iron 2mg 11%<br/>Potassium 242mg 5%<br/>*The % Daily Value (DV) tells you how much a nutrient in a food serving contributes to a daily diet. 2,000 calories a day is used for general nutrition advice.</p>
+    </div>
+</div>
+
+
+
+    
+    
+    </div>
+    
+    <div class="clear"></div>
+
+</div>
+
+
+
+
+
+    </body>
+</html>

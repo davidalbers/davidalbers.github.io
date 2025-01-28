@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 
-<xmp style="display:none;">
+<xmp style="display:none;" theme="readable">
 
 # <img src="./headshot.png" width="100"> David Albers
 
@@ -14,15 +14,23 @@
 **Android Developer** Acorns<br>
 Since February 2022 remote in Chicago, IL
 
-* Member of Android Core team for Acorns app
 * Helped modularize Android project
-* One of the release managers for the weekly release rotation
+  * Demonstrated the effect of large modules on build and test time with module-based metrics
+* Customized Gradle and CI pipeline to decrease test time by 75% and total CI usage by 50%
+  * Converted Acorn's screenshot testing framework to use JVM-based testing with [Roborazzi](https://github.com/takahirom/roborazzi)
+  * Added [AffectedModuleDetector](https://github.com/dropbox/AffectedModuleDetector) to only test affected modules
+* Lead effort to replace cache singleton with Apollo Kotlin's [normalized cache](https://www.apollographql.com/docs/kotlin/caching/normalized-cache)
+  * Refactored cache singleton usage in View to use MVVM with Apollo
+  * Created extensive docs on using caching and how to refactor View architecture
+* Release manager for the weekly release rotation
+  * Automated release management so devs no longer ran custom release scripts
+* Added metrics for flaky tests and used it fix common issues
+  * Went from 20% CI runs failing due to flaky tests to near-zero
 
 #### Previously
 **Android Developer** Expedia<br>
 From January 2018 to February 2022 in Chicago, IL
 
-* Added new features to Expedia's Android app, primarily in Kotlin
 * Integrated a new GraphQL API using Apollo Android
   * migrated lodging LOB from REST to GraphQL
   * built new features across lodging, homescreen, and trip LOBs using GraphQL 
@@ -42,11 +50,9 @@ From November 2016 to December 2017 in Little Rock, AR
 * Handled push messages from both Google Cloud Messaging (GCM) and Firebase
 * Utilized Realm for efficiently storing and reading large amounts of data 
 * Wrote UI and unit tests in Espresso, Mockito, & others
-* Used continous integration (Jenkins) to automate builds and unit testing
-* Generated code coverage reports with Jacoco and Sonarqube from Jenkins		
 
 **Software Engineer** CymSTAR<br>
-from January to May 2016 in Tulsa, OK
+from January to November 2016 in Tulsa, OK
 
 * Modified A-10 Simulator for added functionality and bug fixes
 * Debugged and solved issues caused by upgrading real-time OS (VxWorks) on simulator
@@ -57,8 +63,6 @@ from August 2011 to January 2016 in Alma, AR
 
 * Created accessible user interfaces by providing alternative access methods such as eye-tracking 
 * Implemented Bluetooth communication in apps and developed custom Views in Android 
-* Installed products for clients and demonstrated how to use products
-
 
 ---
 
@@ -87,7 +91,6 @@ from August 2011 to January 2016 in Alma, AR
 #### Education
 Bachelor of Science in Computer Science from the University of Tulsa
 <br>Graduated May 2016, GPA: 3.9
-
 </xmp>
 
 <script src="./strapdown/strapdown.js"></script>

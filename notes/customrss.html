@@ -1,64 +1,52 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Creating your own podcast feed</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
 
-<xmp style="display:none;">
+  <p><a href="./index.html">&#11013; Back</a></p>
 
-[&#11013; Back](./index.html)
+  <h1>Creating your own podcast feed</h1>
+  <p>
+    <a href="https://apps.apple.com/us/app/podmark/id1546743310">Podmark</a> allows you to bookmark podcasts.
+    Once you have a list, you can export that list as text, JSON, or RSS.
+  </p>
+  <p>I use the RSS export to create my own podcast feed of my favorite episodes.</p>
 
----
+  <hr>
 
-# Creating your own podcast feed
+  <h4>1. Build a list in Podmark</h4>
+  <img src="./list.PNG" width="250" alt="Building a list in Podmark">
 
-[Podmark](https://apps.apple.com/us/app/podmark/id1546743310) allows you to bookmark podcasts. Once you have a list, you can export that list as text, JSON, or RSS. 
+  <hr>
 
-I use the RSS export to create my own Podcast feed of my favorite episodes.
+  <h4>2. Export it as RSS</h4>
+  <img src="./sharing.PNG" width="250" alt="Exporting as RSS">
 
+  <hr>
 
-#### 1. Build a list in Podmark
+  <h4>3. Save the file to Dropbox</h4>
+  <img src="./sharesheet.PNG" width="250" alt="Saving to Dropbox via share sheet">
 
-<img src="./list.PNG" width="250">
+  <hr>
 
----
+  <h4>4. Create a shareable link to the Dropbox file. Usually they look something like this:</h4>
+  <pre><code>https://www.dropbox.com/s/b21acdsk21321/pod.rss?dl=0</code></pre>
 
-#### 2. Export it as RSS
+  <hr>
 
-<img src="./sharing.PNG" width="250">
+  <h4>5. Change the <code>https://www.dropbox.com</code> on your link to <code>https://dl.dropboxusercontent.com</code>, example:</h4>
+  <pre><code>https://dl.dropboxusercontent.com/s/b21acdsk21321/pod.rss?dl=0</code></pre>
 
----
+  <hr>
 
-#### 3. Save the file to Dropbox
+  <h4>6. Paste that into your podcast app. The app should recognize it as a podcast feed.</h4>
+  <img src="./add.PNG" width="250" alt="Adding the feed to a podcast app">
+  <img src="./view.PNG" width="250" alt="Viewing the feed in a podcast app">
 
-<img src="./sharesheet.PNG" width="250">
-
----
-
-#### 4. Create a shareable link to the Dropbox file. Usually they look something like this:
-
-```
-https://www.dropbox.com/s/b21acdsk21321/pod.rss?dl=0
-```
-
----
-
-#### 5. Change the `https://www.dropbox.com` on your link to `https://dl.dropboxusercontent.com`, example:
-
-```
-https://dl.dropboxusercontent.com/s/b21acdsk21321/pod.rss?dl=0
-```
-
----
-
-#### 6. Paste that into your podcast app. The app should recognize it as a Podcast feed.
-
-<img src="./add.PNG" width="250">
-<img src="./view.PNG" width="250">
-
-
----
-
-
-</xmp>
-
-<script src="../strapdown/strapdown.js"></script>
+</body>
 </html>
-

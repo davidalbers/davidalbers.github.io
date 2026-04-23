@@ -1,37 +1,56 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exporting Overcast OPML with Shortcuts</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
 
-<xmp style="display:none;">
+  <p><a href="./index.html">&#11013; Back</a></p>
 
-[&#11013; Back](./index.html)
+  <h1>Exporting Overcast OPML with Shortcuts</h1>
 
+  <h3>What is it?</h3>
+  <p>
+    Most podcast apps allow you to export your subscriptions in <a href="https://en.wikipedia.org/wiki/OPML">OPML</a>.
+    <a href="https://overcast.fm/podcasts">Overcast</a> supports this plus an "extended" format which also contains every
+    podcast episode you have downloaded. You can get your personal version on the Overcast
+    <a href="https://overcast.fm/account/export_opml">account page</a>.
+  </p>
+  <p>Here's an example of what you'd find in that file:</p>
+  <pre><code>&lt;!-- Just an example, this isn't the whole file --&gt;
+&lt;outline type="rss" overcastId="323006" text="Cortex" title="Cortex"
+         xmlUrl="https://www.relay.fm/cortex/feed" htmlUrl="https://www.relay.fm/cortex" subscribed="1"&gt;
 
-# Exporting Overcast OPML with Shortcuts
+    &lt;!-- I listened to this whole episode --&gt;
+    &lt;outline type="podcast-episode" overcastId="346825202660328"
+             pubDate="2020-12-14T07:45:00-05:00" title="110: 2021 Yearly Themes"
+             url="http://relay.fm/cortex/110" overcastUrl="https://overcast.fm/+E7b4kA8-g"
+             enclosureUrl="https://www.podtrac.com/pts/redirect.mp3/traffic.libsyn.com/secure/cortex/Cortex_110.mp3"
+             userUpdatedDate="2020-12-14T15:08:20-05:00" userDeleted="1" played="1"/&gt;
 
-### What is it?
+    &lt;!-- I only listened to part of this episode --&gt;
+    &lt;outline type="podcast-episode" overcastId="346825866223649"
+             pubDate="2018-09-19T08:45:00-04:00" title="74: The Biggest Challenge of Being a Human"
+             url="http://relay.fm/cortex/74" overcastUrl="https://overcast.fm/+E7b7COICE"
+             enclosureUrl="https://www.podtrac.com/pts/redirect.mp3/traffic.libsyn.com/cortex/Cortex_074.mp3"
+             userUpdatedDate="2020-12-02T14:22:13-05:00" userDeleted="1" progress="5968"/&gt;</code></pre>
 
-Most podcast apps allow you to export your subscriptions in [OPML](https://en.wikipedia.org/wiki/OPML). [Overcast](https://overcast.fm/podcasts) supports this plus an "extended" format which also contains every podcast episode you have downloaded. You can get your personal version on the Overcast [account page](https://overcast.fm/account/export_opml)
+  <h3>The Shortcut</h3>
+  <p>
+    I wanted to get this data and put it in a more readable place so I made a
+    <a href="https://apps.apple.com/us/app/shortcuts/id915249334">Shortcut</a>.
+    <a href="https://www.icloud.com/shortcuts/98630dfa02204f48b13d402d41048fa3">Download it here.</a>
+    This one just parses the podcast info from the OPML. This should be a good starting point if you
+    wanted to do something with the OPML data.
+  </p>
+  <p>
+    As an example, I made a separate Shortcut which moves all the OPML data into my app,
+    <a href="https://apps.apple.com/us/app/podmark/id1546743310">Podmark</a>.
+    <a href="https://www.icloud.com/shortcuts/0f78ec7c6bb64c3ca2d111e8981840fe">Get that Shortcut here.</a>
+  </p>
 
-Here's an example of what you'd find in that file: 
-
-```
-<!-- Just an example, this isn't the whole file -->
-<outline type="rss" overcastId="323006" text="Cortex" title="Cortex" xmlUrl="https://www.relay.fm/cortex/feed" htmlUrl="https://www.relay.fm/cortex" subscribed="1">
-
-		 <!-- I listened to this whole episode -->
-        <outline type="podcast-episode" overcastId="346825202660328" pubDate="2020-12-14T07:45:00-05:00" title="110: 2021 Yearly Themes" url="http://relay.fm/cortex/110" overcastUrl="https://overcast.fm/+E7b4kA8-g" enclosureUrl="https://www.podtrac.com/pts/redirect.mp3/traffic.libsyn.com/secure/cortex/Cortex_110.mp3" userUpdatedDate="2020-12-14T15:08:20-05:00" userDeleted="1" played="1"/>
-        
-        <!-- I only listened to part of this episode-->
-        <outline type="podcast-episode" overcastId="346825866223649" pubDate="2018-09-19T08:45:00-04:00" title="74: The Biggest Challenge of Being a Human" url="http://relay.fm/cortex/74" overcastUrl="https://overcast.fm/+E7b7COICE" enclosureUrl="https://www.podtrac.com/pts/redirect.mp3/traffic.libsyn.com/cortex/Cortex_074.mp3" userUpdatedDate="2020-12-02T14:22:13-05:00" userDeleted="1" progress="5968"/>
-```
-
-### The Shortcut
-
-I wanted to get this data and put it in a more readable place so I made a [Shortcut](https://apps.apple.com/us/app/shortcuts/id915249334). Download it [here](https://www.icloud.com/shortcuts/98630dfa02204f48b13d402d41048fa3). This one just parses the podcast info from the OPML. This should be a good starting point if you wanted to do something with the OPML data.
-
-As an example, I made a separate Shortcut which moves all the OPML data into my app, [Podmark](https://apps.apple.com/us/app/podmark/id1546743310). Get that Shortcut [here](https://www.icloud.com/shortcuts/0f78ec7c6bb64c3ca2d111e8981840fe)
-
-</xmp>
-
-<script src="../strapdown/strapdown.js"></script>
+</body>
 </html>

@@ -1,86 +1,157 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>David Albers</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
 
-<xmp style="display:none;" theme="readable">
+  <header>
+    <img src="./headshot.png" width="80" height="80" alt="David Albers">
+    <h1>David Albers</h1>
+  </header>
 
-# <img src="./headshot.png" width="100"> David Albers
+  <p class="links">
+    <a href="./resume.pdf">PDF version</a><span>|</span>
+    <a href="https://www.github.com/davidalbers">GitHub</a><span>|</span>
+    <a href="https://www.linkedin.com/in/davidgalbers">LinkedIn</a><span>|</span>
+    <a href="./notes/index.html">Other stuff</a>
+  </p>
 
+  <hr>
 
-<sub>[PDF version](./resume.pdf) | [GitHub](https://www.github.com/davidalbers) | [LinkedIn](https://www.linkedin.com/in/davidgalbers) | [Other stuff](./notes/index.html)<sub>
+  <section>
+    <h2>Currently</h2>
+    <div class="job">
+      <div class="job-header">
+        <span class="job-title">Android Developer</span> at <span class="job-company">Acorns</span>
+      </div>
+      <div class="job-meta">Since February 2022 &middot; Remote in Chicago, IL</div>
+      <ul>
+        <li>Customized Gradle and CI pipeline to decrease test time by 75% and total CI usage by 50%
+          <ul>
+            <li>Converted Acorn's screenshot testing framework to use JVM-based testing with <a href="https://github.com/takahirom/roborazzi">Roborazzi</a></li>
+            <li>Added <a href="https://github.com/dropbox/AffectedModuleDetector">AffectedModuleDetector</a> to only test affected modules</li>
+          </ul>
+        </li>
+        <li>Lead effort to replace cache singleton with Apollo Kotlin's <a href="https://www.apollographql.com/docs/kotlin/caching/normalized-cache">normalized cache</a>
+          <ul>
+            <li>Refactored cache singleton usage in View to use MVVM with Apollo</li>
+            <li>Created extensive docs on using caching and how to refactor View architecture</li>
+          </ul>
+        </li>
+        <li>Release manager for the weekly release rotation
+          <ul>
+            <li>Automated release management so devs no longer ran custom release scripts</li>
+          </ul>
+        </li>
+        <li>Added metrics for flaky tests and used it to fix common issues
+          <ul>
+            <li>Went from 20% CI runs failing due to flaky tests to near-zero</li>
+          </ul>
+        </li>
+        <li>Improved instrumented test framework stability so it could be used as a release check</li>
+        <li>Used Datadog to track custom metrics and built custom dashboards for feature teams</li>
+      </ul>
+    </div>
+  </section>
 
----
+  <section>
+    <h2>Previously</h2>
 
-#### Currently
-**Android Developer** Acorns<br>
-Since February 2022 remote in Chicago, IL
+    <div class="job">
+      <div class="job-header">
+        <span class="job-title">Android Developer</span> at <span class="job-company">Expedia</span>
+      </div>
+      <div class="job-meta">January 2018 &ndash; February 2022 &middot; Chicago, IL</div>
+      <ul>
+        <li>Integrated a new GraphQL API using Apollo Android
+          <ul>
+            <li>Migrated lodging LOB from REST to GraphQL</li>
+            <li>Built new features across lodging, homescreen, and trip LOBs using GraphQL</li>
+          </ul>
+        </li>
+        <li>Helped bring Expedia's design system to Android
+          <ul>
+            <li>Wrote design system tokens and code for system's Android library</li>
+            <li>Built custom <code>Views</code> adhering to the system</li>
+          </ul>
+        </li>
+        <li>Core team member on a project that combined the design system &amp; API to build a library of reusable server-driven UI (SDUI) components
+          <ul>
+            <li>Created proofs-of-concept and later implemented solutions for library architecture</li>
+            <li>Set up publishing of library on Jenkins then later migrated it to GitHub Actions (GHA)</li>
+            <li>Helped onboard teams of contributors to the project</li>
+          </ul>
+        </li>
+        <li>Wrote blog posts and gave presentations to other devs about design system, GraphQL, and SDUI library on Android</li>
+        <li>Wrote integration tests using Robolectric, helped convert existing code to MVVM</li>
+      </ul>
+    </div>
 
-* Helped modularize Android project
-  * Demonstrated the effect of large modules on build and test time with module-based metrics
-* Customized Gradle and CI pipeline to decrease test time by 75% and total CI usage by 50%
-  * Converted Acorn's screenshot testing framework to use JVM-based testing with [Roborazzi](https://github.com/takahirom/roborazzi)
-  * Added [AffectedModuleDetector](https://github.com/dropbox/AffectedModuleDetector) to only test affected modules
-* Lead effort to replace cache singleton with Apollo Kotlin's [normalized cache](https://www.apollographql.com/docs/kotlin/caching/normalized-cache)
-  * Refactored cache singleton usage in View to use MVVM with Apollo
-  * Created extensive docs on using caching and how to refactor View architecture
-* Release manager for the weekly release rotation
-  * Automated release management so devs no longer ran custom release scripts
-* Added metrics for flaky tests and used it to fix common issues
-  * Went from 20% CI runs failing due to flaky tests to near-zero
+    <div class="job">
+      <div class="job-header">
+        <span class="job-title">Android Developer</span> at <span class="job-company">First Orion</span>
+      </div>
+      <div class="job-meta">November 2016 &ndash; December 2017 &middot; Little Rock, AR</div>
+      <ul>
+        <li>Handled push messages from both Google Cloud Messaging (GCM) and Firebase</li>
+        <li>Utilized Realm for efficiently storing and reading large amounts of data</li>
+        <li>Wrote UI and unit tests in Espresso, Mockito, &amp; others</li>
+      </ul>
+    </div>
 
-#### Previously
-**Android Developer** Expedia<br>
-From January 2018 to February 2022 in Chicago, IL
+    <div class="job">
+      <div class="job-header">
+        <span class="job-title">Software Engineer</span> at <span class="job-company">CymSTAR</span>
+      </div>
+      <div class="job-meta">January 2016 &ndash; November 2016 &middot; Tulsa, OK</div>
+      <ul>
+        <li>Modified A-10 Simulator for added functionality and bug fixes</li>
+        <li>Debugged and solved issues caused by upgrading real-time OS (VxWorks) on simulator</li>
+        <li>Implemented additional constraints for scheduling genetic algorithm in C</li>
+      </ul>
+    </div>
 
-* Integrated a new GraphQL API using Apollo Android
-  * migrated lodging LOB from REST to GraphQL
-  * built new features across lodging, homescreen, and trip LOBs using GraphQL 
-* Helped bring Expedia's design system to Android
-	* Wrote design system tokens and code for system's Android library
-	* Built custom `Views` adhering to the system
-* Core team member on a project that combined above design system & API to build a library of reusable server-driven UI (SDUI) components 
- * created proofs-of-concept and later implemented solutions for library architecture 
- * setup publishing of library on Jenkins then later migrated it to Github Actions (GHA)
- * helped onboard teams of contributors to the project
-* Wrote blog posts and gave presentations to other devs about design system, GraphQL, and SDUI library on Android
-* Wrote integration tests using Robolectric, helped convert existing code to MVVM
+    <div class="job">
+      <div class="job-header">
+        <span class="job-title">Software Intern</span> at <span class="job-company">InvoTek</span>
+      </div>
+      <div class="job-meta">August 2011 &ndash; January 2016 &middot; Alma, AR</div>
+      <ul>
+        <li>Created accessible user interfaces by providing alternative access methods such as eye-tracking</li>
+        <li>Implemented Bluetooth communication in apps and developed custom Views in Android</li>
+      </ul>
+    </div>
+  </section>
 
-**Android Developer** First Orion<br>
-From November 2016 to December 2017 in Little Rock, AR
-						     
-* Handled push messages from both Google Cloud Messaging (GCM) and Firebase
-* Utilized Realm for efficiently storing and reading large amounts of data 
-* Wrote UI and unit tests in Espresso, Mockito, & others
+  <hr>
 
-**Software Engineer** CymSTAR<br>
-from January to November 2016 in Tulsa, OK
+  <section>
+    <h2>Projects</h2>
 
-* Modified A-10 Simulator for added functionality and bug fixes
-* Debugged and solved issues caused by upgrading real-time OS (VxWorks) on simulator
-* Implemented additional constraints for scheduling genetic algorithm in C
+    <div class="project">
+      <h3>White Noise Plus for Android &amp; iOS</h3>
+      <ul>
+        <li>White noise app focused on useful, simple features</li>
+        <li>Available on <a href="https://play.google.com/store/apps/details?id=dalbers.com.noise">Play Store</a> and <a href="https://apps.apple.com/us/app/white-noise-plus/id1281372285">App Store</a></li>
+      </ul>
+      <div class="screenshots">
+        <img src="./notes/whitenoise1.png" width="150" alt="White Noise Plus screenshot 1">
+        <img src="./notes/whitenoise2.png" width="150" alt="White Noise Plus screenshot 2">
+      </div>
+    </div>
 
-**Software Intern** InvoTek<br>
-from August 2011 to January 2016 in Alma, AR
+    <div class="project">
+      <h3>Open Source Contributions</h3>
+      <ul>
+        <li><a href="https://github.com/shazam/fork/pull/180/files">Fork: Upgrade AGP 4.1.0</a></li>
+        <li><a href="https://github.com/dropbox/AffectedModuleDetector/issues/219#issuecomment-1579457923">AffectedModuleDetector: Trying to resolve a bug</a></li>
+      </ul>
+    </div>
+  </section>
 
-* Created accessible user interfaces by providing alternative access methods such as eye-tracking 
-* Implemented Bluetooth communication in apps and developed custom Views in Android 
-
----
-
-
-#### Projects
-
-##### White Noise Plus for Android & iOS
-* White noise app focused on useful, simple features
-* Available on [Play Store](https://play.google.com/store/apps/details?id=dalbers.com.noise "App Link") and [App Store](https://apps.apple.com/us/app/white-noise-plus/id1281372285)
-
-<img src="./notes/whitenoise1.png" width="150">
-<img src="./notes/whitenoise2.png" width="150">
-
-##### Open Source contributions
-* [Fork - Upgrade AGP 4.1.0](https://github.com/shazam/fork/pull/180/files)
-* [AffectedModuleDetector - Trying to resolve a bug](https://github.com/dropbox/AffectedModuleDetector/issues/219#issuecomment-1579457923)
-
-</xmp>
-
-<script src="./strapdown/strapdown.js"></script>
+</body>
 </html>

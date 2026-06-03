@@ -9,7 +9,7 @@
     .hero {
       display: flex;
       align-items: center;
-      justify-content: space-between;
+      flex-wrap: wrap;
       gap: 32px;
       background: color-mix(in srgb, var(--bg) 80%, var(--text) 20%);
       border-radius: 16px;
@@ -18,7 +18,7 @@
     }
 
     .hero-text {
-      flex: 1;
+      flex: 1 1 240px;
     }
 
     .hero-text h1 {
@@ -46,6 +46,7 @@
     .intro {
       display: flex;
       align-items: center;
+      flex-wrap: wrap;
       gap: 40px;
       margin-bottom: 36px;
     }
@@ -55,6 +56,10 @@
       width: auto;
       border-radius: 16px;
       flex-shrink: 0;
+    }
+
+    .intro-text {
+      flex: 1 1 240px;
     }
 
     .intro-text .tagline {
@@ -72,8 +77,13 @@
     .premium-intro {
       display: flex;
       align-items: center;
+      flex-wrap: wrap;
       gap: 40px;
       margin-bottom: 32px;
+    }
+
+    .premium-intro-text {
+      flex: 1 1 240px;
     }
 
     .premium-intro img {
@@ -123,7 +133,57 @@
     }
 
     .screenshots.themes {
-      justify-content: space-between;
+      overflow-x: auto;
+      flex-wrap: nowrap;
+      padding-bottom: 8px;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: thin;
+      scrollbar-color: var(--border) transparent;
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        display: block;
+        padding: 24px 20px;
+      }
+
+      .intro,
+      .premium-intro {
+        display: block;
+      }
+
+      .hero-image img {
+        display: block;
+        height: auto;
+        max-height: 380px;
+        width: auto;
+        max-width: 100%;
+        margin: 20px auto 0;
+      }
+
+      .intro > img,
+      .premium-intro > img {
+        display: block;
+        height: auto;
+        max-height: 260px;
+        width: auto;
+        max-width: 100%;
+        margin: 0 auto 24px;
+      }
+
+      .intro.nightlight img {
+        max-height: 260px;
+        height: auto;
+        margin: 0 auto 24px;
+      }
+
+      .intro-text .tagline {
+        font-size: 1.4rem;
+      }
+
+      .premium-intro-text h2 {
+        font-size: 1.4rem;
+      }
     }
 
     .back {

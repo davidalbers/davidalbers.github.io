@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>White Noise Plus</title>
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 32px;
+      background: color-mix(in srgb, var(--bg) 80%, var(--text) 20%);
+      border-radius: 16px;
+      padding: 36px 32px;
+      margin-bottom: 36px;
+    }
+
+    .hero-text {
+      flex: 1;
+    }
+
+    .hero-text h1 {
+      margin-bottom: 8px;
+    }
+
+    .hero-text p {
+      margin-bottom: 20px;
+    }
+
+    @media (prefers-color-scheme: light) {
+      .hero-text h1,
+      .hero-text p {
+        color: #5a4a4c;
+      }
+    }
+
+    .hero-image img {
+      height: 360px;
+      width: auto;
+      border-radius: 20px;
+      display: block;
+    }
+
+    .intro {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+      margin-bottom: 36px;
+    }
+
+    .intro img {
+      height: 220px;
+      width: auto;
+      border-radius: 16px;
+      flex-shrink: 0;
+    }
+
+    .intro-text .tagline {
+      font-size: 1.8rem;
+      font-weight: 700;
+      line-height: 1.3;
+      margin-bottom: 12px;
+    }
+
+    .intro-text .subtext {
+      font-size: 0.95rem;
+      margin-bottom: 0;
+    }
+
+    .premium-intro {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+      margin-bottom: 32px;
+    }
+
+    .premium-intro img {
+      height: 160px;
+      width: auto;
+      border-radius: 16px;
+      flex-shrink: 0;
+    }
+
+    .premium-intro-text h2 {
+      font-size: 1.8rem;
+      font-weight: 700;
+      text-transform: none;
+      letter-spacing: normal;
+      color: var(--text);
+      margin-bottom: 12px;
+    }
+
+    .intro.nightlight img {
+      height: 320px;
+    }
+
+    .premium-intro-text p {
+      font-size: 0.95rem;
+      margin-bottom: 0;
+    }
+
+    .feature-block {
+      margin-bottom: 32px;
+    }
+
+    .feature-block p {
+      margin-bottom: 12px;
+    }
+
+    .screenshots {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .screenshots img {
+      height: 360px;
+      width: auto;
+      border-radius: 16px;
+      flex-shrink: 0;
+    }
+
+    .screenshots.themes {
+      justify-content: space-between;
+    }
+
+    .back {
+      display: inline-block;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      margin-bottom: 24px;
+    }
+  </style>
+</head>
+<body>
+
+  <a class="back" href="../index.html">&larr; David Albers</a>
+
+  <div class="hero">
+    <div class="hero-text">
+      <h1>White Noise Plus</h1>
+      <p>A white, brown, and pink noise player focused on ease-of-use and a calm design.</p>
+      <a href="https://apps.apple.com/us/app/white-noise-plus/id1281372285">
+        <img src="appstore.svg" alt="Download on the App Store" height="44">
+      </a>
+    </div>
+    <div class="hero-image">
+      <img src="image1.png" alt="White Noise Plus main screen">
+    </div>
+  </div>
+
+  <div class="intro">
+    <img src="image2.png" alt="White Noise Plus screenshot">
+    <div class="intro-text">
+      <p class="tagline">Fall asleep, focus, or relax.</p>
+      <p class="subtext">No ads. Most features are free.</p>
+    </div>
+  </div>
+
+  <hr>
+
+  <section>
+    <div class="premium-intro">
+      <div class="premium-intro-text">
+        <h2>&#10026; Premium</h2>
+        <p>$3 one-time. You have 30 days to try it before you buy.<br><br>For people who really like the app and want more sounds: nature, fire, and rain.</p>
+      </div>
+      <img src="image3.png" alt="Premium sounds">
+    </div>
+
+    <div class="feature-block">
+      <p>Plus get some cool themes!</p>
+      <div class="screenshots themes">
+        <img src="image4.png" alt="Theme option">
+        <img src="image5.png" alt="Theme option">
+        <img src="image6.png" alt="Theme option">
+      </div>
+    </div>
+
+    <div class="intro nightlight">
+      <img src="image7.png" alt="Nightlight feature">
+      <div class="intro-text">
+        <p>...also unlock the nightlight.</p>
+        <p class="subtext">This keeps the app open for a few minutes and sets dark backgrounds to a nice glow.</p>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>

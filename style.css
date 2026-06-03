@@ -126,6 +126,32 @@ img {
   max-width: 100%;
 }
 
+details summary {
+  cursor: pointer;
+  list-style: none;
+}
+
+details summary::-webkit-details-marker {
+  display: none;
+}
+
+details summary h2 {
+  display: inline;
+}
+
+details summary h2::after {
+  content: ' ›';
+  font-size: 0.9em;
+}
+
+details[open] summary h2::after {
+  content: ' ⌄';
+}
+
+details > :not(summary) {
+  margin-top: 16px;
+}
+
 /* index.html */
 header {
   display: flex;
@@ -187,6 +213,24 @@ section {
 }
 
 .screenshots img {
+  border-radius: 8px;
+}
+
+.gallery {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  margin-top: 8px;
+  padding-bottom: 8px;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+  scrollbar-color: var(--border) transparent;
+}
+
+.gallery img {
+  height: 180px;
+  width: auto;
+  flex-shrink: 0;
   border-radius: 8px;
 }
 
